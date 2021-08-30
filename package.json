@@ -1,0 +1,13 @@
+{
+  "name": "study-babel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Ryemail/study-babel.git",
+  "author": "阮垚 <ruany@golive.cc>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2"
+  }
+}
