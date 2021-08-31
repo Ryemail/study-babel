@@ -6,8 +6,19 @@
   "author": "阮垚 <ruany@golive.cc>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
     "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
-    "babel-loader": "^8.2.2"
+    "@babel/preset-typescript": "^7.15.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "rimraf lib && babel src -d lib  --extensions \".ts,.js\" --extensions \".ts,.js\"",
+    "preset": "babel --presets @babel/preset-env ./src/index.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.3",
+    "core-js": "3"
   }
 }
